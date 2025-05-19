@@ -7,9 +7,14 @@
 header{
     background-color: #2C3E50;
     padding:10px ;
-    color: rgb(238, 231, 231);}
+    color: rgb(238, 231, 231);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
-a {
+}
+p {
     color: #e5e9eb;
 }
 .header{
@@ -17,8 +22,8 @@ a {
     width: 500px;
     font-family: Arial, Helvetica, sans-serif;
 
-    
 }
+
 
 ul , ol{list-style: none;}
 .nav li a {
@@ -35,28 +40,18 @@ ul , ol{list-style: none;}
 
 }
 .nav li a:hover{
-    background-color: #d498e6;
+    background-color: #2f6f94;
+    border-radius: 15px;
 }
-
-
 
 .nav li ul {
     display: none;
     position: absolute;
     min-width:140px;
 }
-
-
 .nav li:hover > ul{
     display: block;
 }
-
-
-
-
-
-
-
 .menu-1{
     display: flex;
     justify-content: space-between;
@@ -105,6 +100,7 @@ html{
 }
 body {
 min-height: 100%;/*para que ocupe el 100% de la pag*/
+padding-top: 120px;
 }
 
 
@@ -119,9 +115,6 @@ min-height: 100%;/*para que ocupe el 100% de la pag*/
     display: grid;
     gap: 10px;/*separacion entre conteiner*/
     
-
-
-
 nav0 {/*inician los estilos de los nav que estan en el body*/ 
 display: flex;
 justify-content: space-between; /* separa izquierda y derecha */
@@ -297,4 +290,6 @@ footer {
     padding: 20px;
     color: rgb(238, 226, 226);
 }
+
+
 
