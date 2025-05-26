@@ -1,12 +1,13 @@
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
+    /*cabeza o secion 1*/
     background-color: #2C3E50;
-    padding:10px ;
+    padding: 10px;
     color: rgb(238, 231, 231);
     position: fixed;
     top: 0;
@@ -15,39 +16,55 @@ header{
 
 }
 
-p {
-    color: #e5e9eb;
-}
-.header{
+.header {
     margin: auto;
     width: 500px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+.logo {
+    /*del logo que esta en el menu*/
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*inicia lo relacionado con el menu como links convertido en boton*/
 a1 {
-      color: rgb(248, 245, 245); /* Cambia el color del enlace */
-      text-decoration: none; /* Quita el subrayado si quieres */
-    }
+    /*para aplicar color blanco a lo que tiene esta etiqueta*/
+    color: rgb(114, 86, 216);
+    /* Cambia el color del enlace */
+    text-decoration: none;
+    /* Quita el subrayado si quieres */
+}
 
-    a1:hover {
-      color: rgb(209, 59, 22); /* Color al pasar el mouse */
-    }
+a1:hover {
+    color: rgb(247, 218, 218);
+    /* Color al pasar el mouse */
+}
 
-ul , ol{list-style: none;}
+ul,
+ol {
+    list-style: none;
+}
+
 .nav li a {
     background-color: #2C3E50;
     color: #dbe7dd;
-    text-decoration:none;
+    text-decoration: none;
     padding: 10px 15px;
-    display:block;
-    
+    display: block;
+
 
 }
-.nav > li {
+
+.nav>li {
     float: left;
 
 }
-.nav li a:hover{
+
+.nav li a:hover {
     background-color: #2f6f94;
     border-radius: 15px;
 }
@@ -55,50 +72,68 @@ ul , ol{list-style: none;}
 .nav li ul {
     display: none;
     position: absolute;
-    min-width:140px;
+    min-width: 140px;
 }
-.nav li:hover > ul{
+
+.nav li:hover>ul {
     display: block;
 }
-.menu-1{
+
+.menu-1 {
     display: flex;
     justify-content: space-between;
     max-width: 1500px;
     margin: 0 auto;
 }
 
-.nav-menu{
-    display:flex;
+.nav-menu {
+    display: flex;
     margin-right: 40px;
     list-style: none;
 }
-.nav-menu-item{
+
+.nav-menu-item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
 }
-.nav-menu-link{
+
+.nav-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
 }
-.nav-menu-link:hover{
+
+.nav-menu-link:hover {
     background-color: rgb(98, 98, 238);
     transition: 0.5s;
 }
+
 .menu-nav {
     background-color: #f0f2f5;
     margin-top: 10px;
     padding: 10px;
-    color: rgb(10, 10, 10); 
+    color: rgb(10, 10, 10);
 }
-html{
+
+html {
     height: 100%;
 }
+
+p {
+    /*para aplicar color blanco a lo que tiene esta etiqueta*/
+    color: #e5e9eb;
+}
+
+
+
 .body {
-    font-family:"public sans"sans-serif;/*tipo de letra del body*/
-    font-family: 1.2rem;/*tamaño de la letras*/
+    /*inicia lo que tiene que ver con el body*/
+    font-family: "public sans" sans-serif;
+    /*tipo de letra del body*/
+    font-family: 1.2rem;
+    /*tamaño de la letras*/
     display: flex;
     background-color: #8d8df8;
     padding: 10px;
@@ -106,277 +141,462 @@ html{
     color: rgb(20, 19, 19);
 
 }
+
 body {
-min-height: 100%;/*para que ocupe el 100% de la pag*/
-padding-top: 120px;
+    min-height: 100%;
+    /*para que ocupe el 100% de la pag*/
+    padding-top: 120px;
 }
 
 
-.grid-container>*{
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0 ,0.75);
+.grid-container>* {
+    /*contenedor*/
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     padding: 10px;
     text-align: center;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    gap: 10px;/*separacion entre conteiner*/
-    
-nav0 {/*inician los estilos de los nav que estan en el body*/ 
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #f3f0ed;
-padding-left: 15px 30px;
-color: rgb(17, 17, 17);
-height: 160px;;
+    gap: 10px;
+
+    /*separacion entre conteiner*/
+    /*inician los estilos de los nav que estan en el body*/
+    nav0 {
+        /*lo relacionado con el cotenido de la seccion 2*/
+        display: flex;
+        justify-content: space-between;
+        /* separa izquierda y derecha */
+        align-items: center;
+        background-color: #f3f0ed;
+        padding-left: 15px 30px;
+        color: rgb(17, 17, 17);
+        height: 160px;
+        ;
+    }
+
+    .nav-izquierda {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .nav-derecha a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .banner {
+        /*letras que  corren el la seccion2*/
+        width: 100%;
+        overflow: hidden;
+        background: #333;
+        color: white;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+
+    .banner p {
+        display: inline-block;
+        padding-left: 100%;
+        animation: mover 15s linear infinite;
+    }
+
+    @keyframes mover {
+
+        /* es lo que hace que las letras se muevan  de un lado a otro*/
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    nav01 {
+        /*lo relacionado con el cotenido de la seccion 3*/
+        display: flex;
+        justify-content: space-between;
+        /* separa izquierda y derecha */
+        align-items: center;
+        background-color: #2C3E50;
+        padding-left: 0.5px 0.5px;
+        color: rgb(236, 234, 234);
+    }
+
+    /*contenedores que dan forma a donde estan las 3 imagenes de la seccion 4 */
+    #container0 {
+        /*contenedor para poder colocar dentro los 3 div*/
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        min-height: 650px;
+        background-color: #e5e9eb;
+        gap: 50px;
+    }
+
+    #container0 div {
+        /*da formato a los div que estan en el contenerdos*/
+        height: 370px;
+        width: 335px;
+        background: #f4f3f5;
+        margin: 60px;
+    }
+
+    #container1 {
+        /*contenedor para poder colocar dentro los 3 div se usa la img de fondo*/
+        display: flex;
+        justify-content: center;
+        min-height: 650px;
+        background-image: url(Img/fondo1.gif);
+    }
+
+    #container1 div {
+        /*da formato a los div que estan en el contenerdor seccion 6*/
+        height: 550px;
+        width: 700px;
+        background: #f4f3f5;
+        margin: 60px;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    #container2 {
+        /*contenedor para poder colocar dentro los 3 div*/
+        display: flex;
+        justify-content: center;
+        min-height: 700px;
+        background-image: url(Img/fondo3.gif);
+    }
+
+    #container2 div {
+        /*da formato a los div que estan en el contenerdos*/
+        height: 550px;
+        width: 400px;
+        background: #f8f6f8;
+        margin: 40px;
+    }
 }
 
-.nav-izquierda {
-font-weight: bold;
-font-size: 18px;
-}
-
-.nav-derecha a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
-}
-
-nav01 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color:  #2C3E50;
-padding-left: 0.5px 0.5px;
-color: rgb(236, 234, 234);
-}
-#conteiner {/*contenedor para poder colocar dentro los 3 div*/
-    display: flex;
-    justify-content: center;
-    min-height: 650px;
-    background-image: url(Img/fondo1.gif);
-}
-#conteiner div{/*da formato a los div que estan en el contenerdos*/
-    height: 550px;
-    width: 700px;
-    background: #f4f3f5;
-    margin: 60px;
-}
-#conteiner1{/*contenedor para poder colocar dentro los 3 div*/
-    display: flex;
-    justify-content: center;
-    min-height: 400px;
-    background-color: black;
-}
-#conteiner1 div{/*da formato a los div que estan en el contenerdos*/
-    height: 370px;
-    width: 335px;
-    background: #f8f6f8;
-    margin: 60px;
-}
-}
 .nav-iz {
-font-weight: bold;
-font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-de a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav1 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #f3f7f3;
-padding-left: 15px 30px;
-color: rgb(12, 12, 12);
-font-family: Arial, Helvetica, sans-serif;
+    /* seccion 5*/
+    display: flex;
+    justify-content: space-between;
+    /* separa izquierda y derecha */
+    align-items: center;
+    background-color: #f3f7f3;
+    padding-left: 15px 30px;
+    color: rgb(12, 12, 12);
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-
 
 .nav-izqui {
-font-weight: bold;
-font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
 }
+
 .nav-cent a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-derec a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
-}
-nav2 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #2C3E50;
-padding-left: 15px 30px;
-color: rgb(247, 243, 243);
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-izq {
-font-weight: bold;
-font-size: 18px;
+#nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Espacio entre los divs */
+    padding: 20px;
+    background-color: #f8f8f8;
 }
 
-.nav-der a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+#nav1>div {
+    /*aplica a los div que estan en na1 seccion 4*/
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
 }
+
+#container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-izqui5,
+.nav-cent5,
+.nav-derec5 {
+    text-align: center;
+    width: 30%;
+}
+
 nav3 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #63b6ee;
-padding-left: 15px 30px;
-color: rgb(14, 13, 13);
-
+    /*seccion 6 o division 6*/
+    display: flex;
+    justify-content: space-between;
+    /* separa izquierda y derecha */
+    align-items: center;
+    background-color: #c4cad1;
+    padding-left: 15px 30px;
+    color: rgb(14, 13, 13);
 }
 
 .nav-izqu3 {
-font-weight: bold;
-font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 70px;
 }
 
-.nav-dere3 a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+table {
+    /*tabla  derecha de la seccion 6*/
+    width: 300%;
+    border-collapse: collapse;
+    margin: 1px auto;
 }
 
-nav4 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #d498e6;
-padding-left: 15px 30px;
-color: rgb(14, 13, 13);
-}
-.nav-cent4 a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
-}
-nav5 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #10e4e4;
-padding-left: 15px 30px;
-color: rgb(19, 18, 18);
+th,
+td {
+    border-bottom: 4px solid #181a81;
+    /* Raya horizontal */
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    text-align: center;
 }
 
-.nav-izqui5 {
-font-weight: bold;
-font-size: 18px;
-}
-.nav-cent5 a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+
+.nav4 {
+    /*seccion 7 del video*/
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    background-color: #304aa1;
+    padding: 10px;
+    color: white;
+    height: 70vh;
+    /* ajusta  el tamaño donde esta todo el contenido */
+    text-align: center;
 }
 
-.nav-derec5 a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+.video-contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Coloca texto arriba y video abajo */
+    align-items: center;
+    /* Centra horizontalmente */
+    gap: 20px;
+    /* Espacio entre elementos */
+}
+
+.nav-cent4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+iframe {
+    border: none;
+}
+
+.nav5 {
+    /*inicia seccion 8*/
+    background-image: url(Img/fondo3.gif);
+    padding: 20px;
+    color: black;
+    /* Cambia a negro para probar */
+}
+
+.nav5 h1 {
+    /*para dar formato a lo que tenga la etiqueta h1*/
+    font-size: 40px;
+    /* Cambia el número según el tamaño que quieras */
+    font-weight: bold;
+    /* Opcional: hace el texto más grueso */
+    font-family: Arial, sans-serif;
+    /* Opcional: cambia la fuente */
+    text-align: center;
+    /* Opcional: centra el texto */
+    color: #f5f1f1;
+    /* Opcional: cambia el color */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav6 {
-display: flex;
-justify-content: space-between; /* separa izquierda y derecha */
-align-items: center;
-background-color: #a3d3f3;
-padding-left: 15px 30px;
-color: rgb(14, 13, 13);
+    /*inicia seccion9*/
+    display: flex;
+    justify-content: space-between;
+    /* separa izquierda y derecha */
+    align-items: center;
+    background-color: #04a2fd;
+    padding-left: 15px 30px;
+    color: rgb(14, 13, 13);
+}
+
+.izqu6,
+.dere6 {
+    flex: 1;
+    /* Esto divide en partes iguales */
+    padding: 15px;
+    background-color: #04a2fd;
+    box-shadow: 0 0 10px #04a2fd;
 }
 
 .nav-izqu6 {
-font-weight: bold;
-font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-dere6 a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+p {
+    color: black;
+    /*relacionado con letras  del contenido*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fuente tipo monoespaciada para los párrafos */
+    font-size: 16px;
+    /* Tamaño de la letra más grande para los párrafos */
+    text-align: justify;
+    /* Justifica el texto en el párrafo */
+    line-height: 1.6;
+    /* Opcional: Ajusta el espaciado entre las líneas de texto */
+    margin-bottom: 1em;
+}
+
+pt {
+    /*coloca el tipo de letra de los parrafos y el tamaño*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+p1{/*da formato al parrafo que tiene ensima el video*/
+    color:  white;
+    /*relacionado con letras  del contenido*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fuente tipo monoespaciada para los párrafos */
+    font-size: 18px;
+    /* Tamaño de la letra más grande para los párrafos */
+    text-align:center;
+    /* Justifica el texto en el párrafo */
+    line-height: 1.6;
+    /* Opcional: Ajusta el espaciado entre las líneas de texto */  
+}
+.btn-link {
+    /*para los botones que funcionan como link que llevan a mas informacion*/
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    /* el color sin dar clic es de este color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    /*hace que el boton pase a otro color*/
+    background-color: #1780f0;
+    /* Azul más oscuro al pasar el mouse */
+    color: white;
+}
+
+
+
+
+.contenedor4 {/*contenedor de la seccion 9 parte donde estan las 3 img*/
+    display: flex;
+    /* Activa el layout horizontal */
+    justify-content: space-between;
+    /* Espacio entre las cajas */
+    align-items: center;
+    /* Centra verticalmente dentro del contenedor */
+    padding: 20px;
+    background-color: #f1f3f5;
+}
+
+.caja {
+    width: 30%;
+    /* Cada caja ocupa un 30% del ancho del contenedor */
+    padding: 20px;
+    background-color: #f3f4f5;
+    color: white;
+    /*color de la letra del contenedor*/
+    text-align: center;
+    border-radius: 8px;
+}
+.contenedor5 {/*contenedor de la seccion 9 parte donde estan las 3 img*/
+    display: flex;
+    /* Activa el layout horizontal */
+    justify-content: space-between;
+    /* Espacio entre las cajas */
+    align-items: center;
+    /* Centra verticalmente dentro del contenedor */
+    padding: 20px;
+    background-color:  #296cb3;
+}
+
+.caja5 {
+    width: 30%;
+    /* Cada caja ocupa un 30% del ancho del contenedor */
+    padding: 20px;
+    background-color: #296cb3;
+    color: white;
+    /*color de la letra del contenedor*/
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+
 footer {
     background-color: #2C3E50;
     padding: 20px;
     color: rgb(238, 226, 226);
 }
-
-
-
-iframe {/* es del video */
-       margin-top: 20x;   /* Margen superior de 20px */
-    margin-right: 30px; /* Margen derecho de 30px */
-    margin-bottom: 20px; /* Margen inferior de 20px */
-    margin-left: 30px;  /* Margen izquierdo de 30px */
-/*}
-p {
-    color: black;/*relacionado con letras  del contenido*/
-    font-family: Arial, Helvetica, sans-serif; /* Fuente tipo monoespaciada para los párrafos */
-    font-size: 16px; /* Tamaño de la letra más grande para los párrafos */
-   text-align: justify;  /* Justifica el texto en el párrafo */
-    line-height: 1.6;      /* Opcional: Ajusta el espaciado entre las líneas de texto */
-}
-pt{/*coloca el tipo de letra de los parrafos y el tamaño*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-
-#nav1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; /* Espacio entre los divs */
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-#nav1 > div {
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 300px;
-}
-
-p {/*para cada parrafo justifica el texto etc.*/
-    text-align: justify;
-    line-height: 1.6;
-    margin-bottom: 1em;
-}
-
-.logo {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-
-
