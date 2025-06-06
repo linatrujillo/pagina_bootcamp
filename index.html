@@ -1,294 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<script src="script.js"></script><!--llamada del script -->
-<header>
+<head>
     <meta charset="UTF-8">
     <title>Mi Página Web</title>
-    <link rel="stylesheet" href="estilos.css" ->
-    <!--llamado de los estilos que dan forma a la pagina seria la seccion 1*-->
-    <div id="header">
-        <!--inicia el menu principal el que contiene los botones-->
-        <nav class="menu-1">
-            <img src="Img/Logo.png" class="logo " width="100" height="100">
-            <a>IA EN LA EDUCACIÓN </a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item ">
-                </li>
-                <ul class="nav">
-                    <li><a href="Informacion.html">INFORMACIÓN</a>
-                        <ul>
-                            <img src="Img/robot.webp" class="logo " width="150" height="150">
-                        </ul>
-                    </li>
-                    <li> <a href="Videos.html">VIDEOS</a>
-                        <ul>
-                        </ul>
-                    </li>
-                    <li><a href="Graficos.html">GRAFICOS</a> <!--link que lleva a la pagina de graficos-->
-                    </li>
+    <link rel="stylesheet" href="estilos.css"> <!-- corregido -->
+    <script src="script.js"></script> <!-- llamado del script -->
+</head>
 
-                    <li><a href="Novedades.html">NOVEDADES</a>
-                    </li>
-                    </li>
+<body>
+    <header>
+        <div id="header">
+            <!-- Inicia el menú principal que contiene los botones -->
+            <nav class="menu-1">
+                <a><h1>IA EN LA EDUCACIÓN</h1> </a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"></li>
+                    <ul class="nav">
+                        <li>
+                            <a <a href="https://www.mineducacion.gov.co/portal/micrositios-institucionales/Innovacion-con-Uso-de-Nuevas-Tecnologias/422532:Inteligencia-Artificial-en-la-educacion">INFORMACIÓN</a>
+                            <ul>
+                                <img src="Img/robot.webp" class="logo" width="150" height="150">
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Videos.html">VIDEOS</a>
+                            <ul>
+                            <img src="Img/vid.gif" class="logo" width="150" height="150">
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- ✅ Corrección: Ruta correcta + comillas -->
+                            <a href="templates/Graficos.html">GRAFICOS</a>
+                            <ul>
+                            <img src="Img/74pZ.gif" class="logo" width="150" height="150">
+                            </ul>
+                        </li>
+                        <li>
+    <a href="https://edu.google.com/intl/ALL_es/ai/education/">NOVEDADES</a>
+
+
+
+
+</li>
+                    </ul>
                 </ul>
-    </div>
-</header><!--fin de la cabeza de la pagina y de la seccion de menu-->
-<!--inicia el cuerpo del index-->
+            </nav>
+        </div>
+    </header>
 
 <body class="grid-container">
     <!--se crea un contenedor que divide la pagina en varias secciones secion 2 letras que corren-->
     <nav0><!-- seccion 2    -->
         <div class="nav-izquierda">
             <marquee behavior="scroll" direction="left"><!--se crea una marquesina que hace que el contenido corra-->
-               <h2> Videos sobre avances de la AI en la educación, tecnología y desarrollo. Estadísticas de la AI en la
-                educación.
-                Videos sobre avances de la AI en la educación, tecnología y desarrollo. Estadísticas de la AI en la
-                educación.</h2>
+            <h1> Bienvenidos                               
+            </h1>
             </marquee>
         </div>
-        <div class="nav-derecha">
-            <a href="#informacion">imagen </a>
-        </div>
-    </nav0>
+        
+        </nav0>
 
-    <nav01><!-- inicia la seccion 3 donde el cerebro gira    -->
-        <div class="iz">
-            DONDE LOS ROBOTS DOMINAN <br><br>
-            Tutoría Inteligente<br><br>
-            Plataformas como Carnegie Learning ofrecen “tutores
-            virtuales” que guían paso a paso la resolución de
-            problemas, detectan errores conceptuales y explican
-            puntos clave con ejemplos adicionales. Funcionan
-            24/7 y se integran en LMS (Learning Management
-            Systems).<br><br>
+        <nav2>
+    <!-- inicia la sección 6 -->
+    <div id="container1">
+        <!-- se crea un contenedor -->
+        
+        <div class="contenido">
+            <h1>¿Cómo ha impactado la IA en la educación?</h1><br><br>
 
-            <a href="#" class="btn-link">MAS INFORMACIÓN</a><!--colocar en href la url a donde queremos que nos lleve-->
-        </div>
-        <img src="Img/cerebro.gif" class="logo " width="800" height="600">
-        </div>
-    </nav01>
+            <pt>
+                La inteligencia artificial ha tenido un impacto profundo en la educación, facilitando la personalización del aprendizaje, el análisis de datos educativos, y el acceso a recursos educativos en línea. Tradicionalmente, la enseñanza ha seguido un enfoque generalizado donde todos los estudiantes siguen el mismo ritmo de aprendizaje y acceden al mismo material. Sin embargo, la IA permite un enfoque más adaptativo, ofreciendo contenido y actividades personalizadas en función de las necesidades individuales de cada estudiante.
 
-    <nav1><!--   inicia la seccion 4 donde hay 3 imagenes  -->
-        <div id="container0">
-            <div class="nav-izqui">
-                ÁREAS CLAVES <br>
-                <strong><a
-                        href="#"><!-- colocar la direccion o url a la queremos que nos lleve la imagen cuando damos clic    -->
-                        <img src="Img/imagen1.gif" class="logo" width="350" height="250"></a>
-                    Aprendizaje personalizado</strong><br>
-                La IA analiza el ritmo, nivel y estilo de aprendizaje de cada estudiante para adaptar automáticamente
-                ejercicios, ejemplos y contenidos.
-            </div>
-            <div class="nav-cent">
-                <strong><a href="#">
-                        <img src="Img/imagen2.gif" class="logo" width="300" height="250"></a>
-                </strong><br>
-                Sistema de tutoría inteligente<br>
-                La IA analiza el ritmo, nivel y estilo de aprendizaje de cada estudiante para adaptar automáticamente
-                ejercicios, ejemplos y contenidos.
-            </div>
-            <div class="nav-derec">
-                <strong><a href="#">
-                        <img src="Img/imagen3.gif" class="logo" width="350" height="250"></a>
-                    Aprendizaje personalizado</strong><br>
-                La IA analiza el ritmo, nivel y estilo de aprendizaje de cada estudiante para adaptar automáticamente
-                ejercicios, ejemplos y contenidos.
-            </div>
-        </div>
-    </nav1>
-
-    <nav><!-- inicia la seccion 6 donde esta la grafica de barras    -->
-        <div id="container1"><!--  se craea un contenedor   -->
-            <div class="contenido">
-                <p>
-                    <pt>
-                        Últimos Gráficos de<br>
-                        IA en Educación <br><br>
-                        Evolución de las publicaciones científicas que abordan aplicaciones de IA en el ámbito
-                        educativo. El incremento constante refleja el creciente interés académico y la madurez de la
-                        investigación en algoritmos de personalización y tutoría inteligente.
-                </p>
-                </pt>
-                <a href="#" class="btn-link">MAS
-                    INFORMACIÓN</a><!-- link de leer mas colocar donde esta  el · la url que vamos a usar    -->
-                <img src="Img/cab1.png" class="logo" width="200" height="200">
-            </div>
-            <div><img src="Img/barras1.png" class="logo " width="650" height="500"></div>
-        </div>
-    </nav>
-
-    <nav3><!--inicia  la seccion 6 el siguiente espacio esta dividido en 2 div asi con cada nav-->
-        <div class="nav-izqu3">
-           <h2></h2> Aprendizaje<br>            
-                personalizado con la AI</h2><br><br>
-                   <p><pt>Es un enfoque educativo que adapta
-                    materiales, ritmo y actividades a las
-                    necesidades, intereses y estilo de cada
-                    estudiante. La IA hace posible esta
-                    adaptación en tiempo real, analizando
-                    patrones de desempeño y proponiendo
-                    rutas de estudio únicas que maximicen la
-                    comprensión y la motivación individual.
-
-                    <br>
-                    En la era digital, la Inteligencia Artificial (IA)
-                    está redefiniendo la forma en que se
-                    imparte y se recibe educación. El
-                    aprendizaje personalizado es un enfoque
-                    que adapta contenidos, ritmos y actividades
-                    a las necesidades individuales de cada
-                    estudiante, aprovechando algoritmos
-                    avanzados para ofrecer una experiencia
-                    formativa única y eficiente. A continuación,
-                    tienes un contenido completo y listo para
-                    copiar y pegar en tu sitio web.
-            </p>
+Por ejemplo, plataformas como Duolingo o Khan Academy utilizan algoritmos de IA para ajustar el contenido de aprendizaje en tiempo real, basado en el progreso del estudiante. Si un estudiante tiene dificultades en un tema específico, la plataforma puede proporcionar más ejercicios o explicaciones adicionales para reforzar el conocimiento en esa área. Este tipo de personalización no solo optimiza el aprendizaje, sino que también reduce la frustración y mejora la motivación de los estudiantes.
             </pt>
-        </div>
-        <table><!--se crea una tabla para organizar las img y los links con mas informacion    -->
-            <tr>
-                <th><img src="Img/imagentb1.jpg" class="logo" width="450" height="250"></th>
-                <th>
-                    <p>Chatbots 24/7<br><a href="#" class="btn-link">MAS INFORMACIÓN</a></p>
-                </th>
-            </tr>
-            <tr>
-                <td><img src="Img/imagentb2.jpg" class="logo" width="450" height="250"> </td>
-                <td>
-                    <p>Contenido relacionado con la imagen 2.<br><a href="#" class="btn-link">MAS INFORMACIÓN</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="Img/imagentb3.jpg" class="logo" width="450" height="250"></td>
-                <td>
-                    <p>Contenido relacionado con la imagen 3.<br><a href="#" class="btn-link">MAS INFORMACIÓN</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="Img/imagentb4.jpg" class="logo" width="450" height="250"></td>
-                <td>
-                    <p>Chatbots 24/7<br><a href="#" class="btn-link">MAS INFORMACIÓN</a></p>
-                </td>
-            </tr>
-        </table>
-        </div>
-    </nav3>
- 
-    <nav4><!--inicia el contenido de la seccion 7 donde se encuentra incrustado el video-->
-    <section class="nav4">
-        <div class="video-contenedor">
-            <div class="nav-cent4">
-                <h1>Los grandes avances de la IA</h1><br>
-                <pt><p1> Es un enfoque educativo que adapta materiales, ritmo y actividades a las necesidades,
-                    intereses y estilo de cada estudiante. La IA hace posible esta adaptación en tiempo
-                    real, analizando patrones de desempeño y proponiendo rutas de estudio únicas que
-                    maximicen la comprensión y la motivación individual.</pt></p1> <br>
 
-
-                <a href="#" class="btn-link">MÁS INFORMACIÓN</a>
-            </div>
-            <!--se crea el iframe para que deje incrustar el video no sea necesario descargar el lo trae desde la web-->
-            <iframe width="800" height="600" 
-        src="https://www.youtube.com/embed/9N1iYDHRZ14" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            <!-- Aquí insertamos el video -->
+      <iframe width="560" height="350"
+        src="https://www.youtube.com/embed/9N1iYDHRZ14"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
 </iframe>
+            
         </div>
-    </section>
-        </nav4>
-    <nav5><!-- inicia la seccion 8 donde hay 3 imagenes    -->
-        <div class="nav5-wrapper">
-            <div class="nav5">
-                <h1>¿Listos para saber mas
-                    información?</h1>
-                <div id="container2"><!--se crea un contenedor para colocar las 3 imagenes   -->
-                    <div class="nav-izqui5">
-                        <img src="Img/niños1.png" class="logo" width="400" height="280">
-                        <p>Informacion muy minima</p>
-                    </div>
-                    <div class="nav-cent5">
-                        <img src="Img/niños2.png" class="logo" width="400" height="280">
-                        <p>Informacion muy minima</p>
-                    </div>
-                    <div class="nav-derec5">
-                        <img src="Img/niños3.png" class="logo" width="400" height="280">
-                        <p>Informacion muy minima</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav5>
 
-    <nav6><!-- inicia la seccion 9   -->
-        <div class="izqu6"><h2> IN <br>
-            EDUCATION </h2><br>
-           <p><pt>Bienvenido a AI Insight Hub, tu portal de
-            referencia donde convergen la inteligencia
-            artificial y la educación del siglo XXI. Aquí
-            exploramos cómo los avances tecnológicos
-            están transformando el aula, potencializando el
-            aprendizaje y redefiniendo el rol de estudiantes
-            y profesores. Nuestra misión es ofrecer una
-            ventana clara y actualizada al mundo de la IA
-            educativa, combinando</p></pt> 
+        <div>
+            <img src="Img/edu.gif" class="logo" width="750" height="500">
+            <h1>Estado actual de la IA en la educación</h1><br>
+            <pt>
+En la actualidad, se ha utilizado la Inteligencia Artificial en la educación de diversas maneras,
+ desde chatbots que proporcionan asistencia a los estudiantes las 24 horas del día, los 7 días de 
+ la semana, hasta algoritmos de aprendizaje personalizados que se adaptan a las necesidades de cada 
+ estudiante.</pt> 
         </div>
-        <div class="dere6"> <!-- se crea un contenedor para poder acomodar las 3 img superiores
-            y los  diferentes links-->
-            <div class="contenedor4">
-                <div class="caja"><img src="Img/imagen1.gif" class="logo" width="150" height="150"></div>
-                <div class="caja"><img src="Img/cab1.png" class="logo" width="150" height="150"></div>
-                <div class="caja"><img src="Img/cabeza2.png" class="logo" width="150" height="150"></div>
-            </div>
-            <div class="contenedor5"><!-- se crea contenedor para organizar los links  -->
-                <div class="caja5">
-                    <li><a href="Informacion.html">
-                            <p>INFORMACIÓN</p>
-                        </a>
-                        <ul class="menu-vertical">
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                        </ul>
-                </div>
-                <div class="caja5">
-                    <li><a href="Videos.html">
-                            <p>VIDEOS</p>
-                        </a>
-                        <ul class="menu-vertical">
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                        </ul>
-                </div>
-            </div>
-            <div class="contenedor5">
-                <div class="caja5">
-                    <li><a href="Graficos.html">
-                            <p>GRAFICOS </p>
-                        </a>
-                        <ul class="menu-vertical">
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                        </ul>
-                </div>
-                <div class="caja5">
-                    <li><a href="Novedades.html">
-                            <p>NOVEDADES</p>
-                        </a>
-                        <ul class="menu-vertical">
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                            <li><a href="#">Contenido</a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </nav6>
+    </div>
+</nav2>
+    
+ 
+   
+    
+            
 </body> <!-- fin del cuerpo   -->
 
-<footer class="footer"><!-- pie de pagina  -->
-    <h1>Este es el pie de página.</h1>
+<footer>
+    <p1>Esta plataforma explora el uso de la inteligencia artificial para mejorar 
+        el aprendizaje, la enseñanza y la gestión educativa.</p1><br>
+     <p1>Email: contacto@iaeducacion.org</p1><br>
+      <p1>Teléfono: +123 456 789</p1><br>
+    
+
+    
+
+
+    <p1>&copy; 2025 IA en la Educación. Todos los derechos reservados.</p1>
+ 
 </footer>
 
 </html>

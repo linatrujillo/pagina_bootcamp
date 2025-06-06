@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Desafíos IA en Educación</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #bcdbe7;
+      padding: 20px;
+      text-align: center;
+    }
+    table, th, td {
+      border: 1px solid #444;
+      border-collapse: collapse;
+      padding: 8px 12px;
+      margin: 20px auto;
+   
+    }
+    h1 {
+      color: #333;
+    }
+    canvas {
+  max-width: 300px;    /* Reduce el ancho máximo a 300px */
+  max-height: 300px;   /* Limita también la altura */
+  margin: 20px auto 0 auto;  /* Centra el canvas con margen arriba */
+  display: block;      /* Para que el margin auto funcione centrado */
+}
+  </style>
+</head>
+<body>
+
+  <h1>Tabla de Desafíos que enfrentan las IA en la educación</h1>
+
+  <table id="tabla">
+    <thead id="thead"></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+ 
+  <h2>Gráfico de Torta: Desafíos en Porcentaje</h2>
+<canvas id="graficoTorta"></canvas>
+
+<h2>Gráfico de Barras: Desafíos en Porcentaje</h2>
+<canvas id="graficoBarras"></canvas>
+  <script>
+    fetch('datos.json')
+  .then(response => response.json())
+  .then(data => {
+    // Crear tabla
+    const thead = document.getElementById('thead');
+    const tbody = document.getElementById('tbody');
+    const keys = Object.keys(data[0]);
+
+    // Encabezados
+    let headRow = document.createElement('tr');
+    keys.forEach(key => {
+      let th = document.createElement('th');
+      th.textContent = key;
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+
+    // Filas
+    data.forEach(row => {
+      let tr = document.createElement('tr');
+      keys.forEach(key => {
+        let td = document.createElement('td');
+        td.textContent = row[key];
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+
+    // Extraer datos
+    const etiquetas = data.map(d => d["desafio"]);
+    const valores = data.map(d => d["desafio en (%)"]);
+
+    // Gráfico de Torta
+    const ctx = document.getElementById('graficoTorta').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: etiquetas,
+        datasets: [{
+          label: 'Desafíos (%)',
+          data: valores,
+          backgroundColor: [
+            '#ff6384', '#36a2eb', '#ffcd56', '#4bc0c0', '#9966ff', '#ff9f40'
+          ],
+          borderColor: '#fff',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'right' },
+          title: {
+            display: true,
+            text: 'Distribución de Desafíos (%)'
+          }
+        }
+      }
+    });
+
+    // Gráfico de Barras
+    const ctxBar = document.getElementById('graficoBarras').getContext('2d');
+    new Chart(ctxBar, {
+      type: 'bar',
+      data: {
+        labels: etiquetas,
+        datasets: [{
+          label: 'Desafíos (%)',
+          data: valores,
+          backgroundColor: '#9966ff',
+          borderColor: '#000000',
+          borderWidth: 3
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: {
+              display: true,
+              text: '% de desafío'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Desafíos'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: 'Porcentaje de desafíos por categoría'
+          }
+        }
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Error al cargar los datos:', error);
+  });
+
+  </script>
+<a href="../index.html" class="boton">Volver a la página principal</a><BR>
+
+
+</body>
+<footer>
+  <p>&copy; 2025 IA en la Educación. Todos los derechos reservados.</p>
+</footer>
+</html>
